@@ -21,15 +21,17 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 200px 200px 0px 200px;
+            box-sizing: border-box;
+            display: flex; /* Para aplicar flexbox */
         }
         main {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             flex-grow: 1;
-            padding: 20px;
+            padding: 20px 25px 20px 25px;
             margin-top: 20px;
-            margin-right: 50px;
+            margin-right: 15px;
             margin-left: 200px;
             background-color: rgb(93, 129, 93);
             margin-bottom: 20px;
@@ -38,7 +40,7 @@
         main > p {
             width: 100%;
             text-align: start;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
           
         }
         main > div {
@@ -74,6 +76,8 @@
             padding: 20px;
             text-align: center;
             margin: 0 200px 200px 200px;
+            box-sizing: border-box;
+            display: flex; /* Para aplicar flexbox */
         }
         
         /* Flexbox para posicionar main e nav lado a lado */
@@ -82,7 +86,7 @@
         }
 
         .sidebar{
-         padding-top: 40px;
+         padding-top: 35px;
          padding-left: 20px;
         }
     </style>
@@ -90,23 +94,23 @@
 <body>
     
 <header>
-    <h1>Header</h1>
+    <p>header</p>
 </header>
 
 <div class="container">
     <main>
-        <p>Main</p> <!-- Aqui está o p posicionado acima das divs -->
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item9</div>
-        <div class="item10">item10</div>
-        <div class="item11">item11</div>
+        <p>main</p> <!-- Aqui está o p posicionado acima das divs -->
+        <div id="div1" class="item">item</div>
+        <div id="div2" class="item">item</div>
+        <div id="div3" class="item">item</div>
+        <div id="div4" class="item">item</div>
+        <div id="div5" class="item">item</div>
+        <div id="div6" class="item">item</div>
+        <div id="div7" class="item">item</div>
+        <div id="div8" class="item">item</div>
+        <div id="div9" class="item">item9</div>
+        <div id="div10" class="item">item10</div>
+        <div id="div11" class="item">item11</div>
     </main>
 
     <nav class="sidebar">sidebar</nav>
