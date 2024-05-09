@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin-bottom: 10px;
+        }
+        header {
+            background-color:rgb(18, 70, 214);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 200px 200px 0px 200px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 20px;
+            margin-right: 50px;
+            margin-left: 200px;
+            background-color: rgb(93, 129, 93);
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        main > p {
+            width: 100%;
+            text-align: start;
+            margin-bottom: 20px;
+          
+        }
+        main > div {
+            width: calc(25% - 10px);
+            margin-bottom: 50px;
+            background-color:rgb(3, 112, 76);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            height: 130px;
+            display: flex; /* Adicionando flexbox */
+            justify-content: center; /* Centralizando horizontalmente */
+            align-items: center; /* Centralizando verticalmente */
+        }
+        nav {
+            width: calc(25% - 10px);
+            background-color: red;
+            padding: 10px; /* Reduzindo o espaçamento interno */
+            box-sizing: border-box;
+            display: flex; /* Para aplicar flexbox */
+            flex-direction: column; /* Para que a nav se estenda verticalmente */
+            justify-content: space-between; /* Para distribuir o espaço uniformemente */
+            align-items: stretch; /* Para garantir que a altura seja a mesma que o main */
+            margin-top: 20px; /* Adicionando margem superior */
+            margin-bottom: 20px;
+            margin-right: 200px;
+            color: #fff;
+        }
+        footer {
+            background-color: rgb(18, 70, 214);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 0 200px 200px 200px;
+        }
+        
+        /* Flexbox para posicionar main e nav lado a lado */
+        .container {
+            display: flex;
+        }
+
+        .sidebar{
+         padding-top: 40px;
+         padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <h1>Header</h1>
+</header>
+
+<div class="container">
+    <main>
+        <p>Main</p> <!-- Aqui está o p posicionado acima das divs -->
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item9</div>
+        <div class="item10">item10</div>
+        <div class="item11">item11</div>
+    </main>
+
+    <nav class="sidebar">sidebar</nav>
+</div>
+
+<footer>footer</footer>
+
+</body>
+</html>
