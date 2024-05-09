@@ -17,11 +17,11 @@
         header {
             background-color:rgb(94, 170, 221);
             color: #fff;
-            padding-left: 40px;
+            padding-left: 35px;
             padding-top: 25px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 190px 190px 0px 190px;
+            margin: 190px 150px 0px 150px; /* Ajuste da margem */
             box-sizing: border-box;
             display: flex; /* Para aplicar flexbox */
             height: 100px;
@@ -29,39 +29,50 @@
         main {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 5px;
             flex-grow: 1;
-            padding: 20px 15px 25px 25px;
-            margin-top: 25px;
-            margin-right:25px;
-            margin-left: 190px;
+            padding: 25px;
+            margin: 20px; /* Adicionando margem em todos os lados */
             background-color: rgb(123, 201, 123);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #fff;
-            width: 75%;
+            width: calc(100% - 240px); /* Ajustando a largura */
+            justify-content: start; /* Distribui o espaço entre as divs */
+            margin-left: 150px;
         }
-        main > p {
+        main > .container {
             width: 100%;
-            text-align: start;
-            margin-bottom: 15px;
-            padding-left: 15px;
-          
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
         }
-        main > div {
-            width: calc(36% - 120px);
-            background-color:rgb(5, 141, 95);
+        main > .container > .title {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        main > .container > .column {
+            width: calc(25% - 4.5px); /* Ajustando a largura para 4 colunas */
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        main > .container > .column > .item {
+            background-color: rgb(5, 141, 95);
             color: #fff;
-            padding: 0px;
             box-sizing: border-box;
             text-align: center;
             height: 100px;
-            display: flex; /* Adicionando flexbox */
-            justify-content: center; /* Centralizando horizontalmente */
-            align-items: center; /* Centralizando verticalmente */
-            margin:  14.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
         }
         nav {
-            width: calc(40% - 100px);
+            width: calc(30% - 5px);
             background-color: red;
             padding: 10px; /* Reduzindo o espaçamento interno */
             box-sizing: border-box;
@@ -69,18 +80,18 @@
             flex-direction: column; /* Para que a nav se estenda verticalmente */
             justify-content: space-between; /* Para distribuir o espaço uniformemente */
             align-items: stretch; /* Para garantir que a altura seja a mesma que o main */
-            margin-top: 25px; /* Adicionando margem superior */
-            margin-bottom: 25px;
-            margin-right: 190px;
+            margin-top: 20px; /* Adicionando margem superior */
+            margin-bottom: 20px;
+            margin-right: 150px;
             color: #fff;
         }
         footer {
             background-color: rgb(18, 70, 214);
             color: #fff;
-            padding-left: 42px;
+            padding-left: 38px;
             padding-top: 42px;
             text-align: center;
-            margin: 0 190px 190px 190px;
+            margin: 0 150px 150px 150px;
             box-sizing: border-box;
             display: flex; /* Para aplicar flexbox */
             height: 100px;
@@ -93,12 +104,9 @@
         }
 
         .sidebar{
-         padding-top: 35px;
-         padding-left: 25px;
+            padding-top: 35px;
+            padding-left: 35px;
         }
-
-       
-        
     </style>
 </head>
 <body>
@@ -109,18 +117,29 @@
 
 <div class="container">
     <main>
-        <p>main</p> <!-- Aqui está o p posicionado acima das divs -->
-        <div id="div1" class="item">item</div>
-        <div id="div2" class="item">item</div>
-        <div id="div3" class="item">item</div>
-        <div id="div4" class="item">item</div>
-        <div id="div5" class="item">item</div>
-        <div id="div6" class="item">item</div>
-        <div id="div7" class="item">item</div>
-        <div id="div8" class="item">item</div>
-        <div id="div9" class="item">item</div>
-        <div id="div10" class="item">item</div>
-        <div id="div11" class="item">item</div>
+        <div class="container">
+            <p class="title">main</p>
+            <div class="column">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+            <div class="column">
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+            <div class="column">
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+                <div class="item">Item 9</div>
+            </div>
+            <div class="column">
+                <div class="item">Item 10</div>
+                <div class="item">Item 11</div>
+               
+            </div>
+        </div>
     </main>
 
     <nav class="sidebar">sidebar</nav>
