@@ -11,20 +11,24 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
-            margin-bottom: 10px;
+            height: 100vh; /* Alterado para height em vez de min-height */
+            background-color: antiquewhite;
         }
         header {
             background-color:rgb(94, 170, 221);
             color: #fff;
             padding-left: 35px;
-            padding-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 190px 250px 0px 250px; /* Ajuste da margem */
+            box-shadow: inset -5px  -12px 5px -5px rgba(146, 139, 171, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+            inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); /* Adicionando box-shadow interno */
+            margin: 0px 250px 0px 250px; /* Ajuste da margem */
             box-sizing: border-box;
             display: flex; /* Para aplicar flexbox */
-            height: 90px;
+            height: 100px;
+            font-weight: bold;
+            border-radius: 10px;
         }
         main {
             display: flex;
@@ -39,6 +43,9 @@
             width: calc(100% - 240px); /* Ajustando a largura */
             justify-content: start; /* Distribui o espaço entre as divs */
             margin-left: 250px;
+            border-radius: 10px;
+            box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+            inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); /* Adicionando box-shadow interno */
         }
         main > .container {
             width: 100%;
@@ -70,6 +77,10 @@
             align-items: center;
             gap: 10px;
             margin: 10px;
+            border-radius: 10px;
+            box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+            inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); /* Adicionando box-shadow interno */
+            font-weight: bold;
         }
         nav {
             width: calc(30% - 5px);
@@ -84,17 +95,27 @@
             margin-bottom: 20px;
             margin-right: 250px;
             color: #fff;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.458),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+            inset 5px  -12px 5px -5px rgba(1, 15, 15, 0.158); /* Adicionando box-shadow interno */
         }
         footer {
-            background-color: rgb(18, 70, 214);
+            background-color:rgb(94, 170, 221);
+            box-shadow: inset 0px  8px 8px rgba(204, 9, 35, 0.3); 
             color: #fff;
-            padding-left: 38px;
-            padding-top: 38px;
+            padding-left: 35px;
+            padding-top: 44px;
+            padding-bottom: 15px;
             text-align: center;
-            margin: 0 250px 250px 250px;
+            margin: 0px 250px 0px 250px; /* Ajuste da margem */
             box-sizing: border-box;
             display: flex; /* Para aplicar flexbox */
-            height: 90px;
+            height: 100px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+            inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); /* Adicionando box-shadow interno */
         }
         
         /* Flexbox para posicionar main e nav lado a lado */
